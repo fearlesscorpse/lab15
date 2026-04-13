@@ -4,5 +4,8 @@
         protected $square;
         protected $color;
         protected $numberOfSides;
+
+        //Задание 2
+        abstract public function infoAbout();
     }
 ?>
