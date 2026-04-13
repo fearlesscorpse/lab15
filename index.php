@@ -10,6 +10,9 @@
     }
     //Задание 3
     class Rectangle extends Figure implements iFigure {
+        //Задание 5
+        private $a;
+        private $b;
     }
     class Triangle extends Figure implements iFigure {
     }
