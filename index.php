@@ -17,6 +17,8 @@
     class Triangle extends Figure implements iFigure {
     }
     class Square extends Figure implements iFigure {
+        //Задание 6
+        private $a;
     }
     //Задание 4
     interface iFigure {
