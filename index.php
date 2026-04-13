@@ -49,7 +49,8 @@
         //Задание 10
         public function getArea() { 
             $p = ($this->a+$this->b+$this->c)/2;
-            $pg = sqrt($p*($p-$this->a)*($p-$this->b)*($p-$this->c));
+            $s= sqrt($p*($p-$this->a)*($p-$this->b)*($p-$this->c));
+            return $s;
         }
         //Задание 11
         public function infoAbout() {
@@ -88,4 +89,14 @@
 
     $t1 = new Triangle(3,4,5);
     $t2 = new Triangle(6,7,8);
+    
+    //Задание 13
+    echo "Прямоугольник 1: площадь = " . $r1->getArea() . "<br>";
+    echo "Прямоугольник 2: площадь = " . $r2->getArea() . "<br>";
+
+    echo "Квадрат 1: площадь = " . $s1->getArea() . "<br>";
+    echo "Квадрат 2: площадь = " . $s2->getArea() . "<br>";
+
+    echo "Треугольник 1: площадь = " . $t1->getArea() . "<br>";
+    echo "Треугольник 2: площадь = " . $t2->getArea() . "<br>";
 ?>
