@@ -78,4 +78,14 @@
     interface iFigure {
         public function getArea();    
     }
+    
+    //Задание 12
+    $r1 = new Rectangle(5,8);
+    $r2 = new Rectangle(2,10);
+
+    $s1 = new Square(5);
+    $s2 = new Square(5);
+
+    $t1 = new Triangle(3,4,5);
+    $t2 = new Triangle(6,7,8);
 ?>
