@@ -24,6 +24,14 @@
             $this->b=$b;    
             $this->numberOfSides=4;
         }
+        //Задание 10
+        public function getArea() { 
+            return $this->a*$this->b;
+        }
+        //Задание 11
+        public function infoAbout() {
+            return "Это класс прямоугольника. У него " . ($this->numberOfSides) . " стороны";         
+        }
     }
     class Triangle extends Figure implements iFigure {
         //Задание 7
@@ -38,6 +46,15 @@
             $this->c=$c;   
             $this->numberOfSides=3;
         }
+        //Задание 10
+        public function getArea() { 
+            $p = ($this->a+$this->b+$this->c)/2;
+            $pg = sqrt($p*($p-$this->a)*($p-$this->b)*($p-$this->c));
+        }
+        //Задание 11
+        public function infoAbout() {
+            return "Это класс треугольника. У него " . ($this->numberOfSides) . " стороны";         
+        }
     }
     class Square extends Figure implements iFigure {
         //Задание 6
@@ -47,6 +64,14 @@
             parent::__construct($color);
             $this->a=$a;    
             $this->numberOfSides=4;
+        }
+        //Задание 10
+        public function getArea() { 
+            return $this->a*$this->a;
+        }
+        //Задание 11
+        public function infoAbout() {
+            return "Это класс квадрата. У него " . ($this->numberOfSides) . " стороны";         
         }
     }
     //Задание 4
